@@ -1,4 +1,4 @@
 <body>
 	<b>Version: </b><font id="version">...</font>
-	<script>document.getElementById("version").innerText = (window.process || {}).version;</script>
+	<script>document.getElementById("version").innerText = ((window.process || {}).versions || {})['node-webkit'];</script>
 </body>
